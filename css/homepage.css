@@ -86,4 +86,39 @@ ul, ol {
   color: #ddd;
 }
 
+.slider {
+  padding: 20px 0;
+  text-align: center;
+}
+.slider q {
+  display: block;
+  width: 80%;
+  margin: 0 auto 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+.slider .slide-img {
+  width: 1200px;
+  height: 500px;
+}
+.slider .bullets {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+}
+.slider .bullets li {
+  width: 20px;
+  height: 20px;
+  background-color: #d1d1d1;
+  border-radius: 50%;
+  transition: 0.3s;
+  border: 2px solid #d1d1d1;
+}
+.slider .bullets li.active, .slider .bullets li:hover {
+  background-color: #fff;
+  border: 2px solid #e2494c;
+}
+
 /*# sourceMappingURL=homepage.css.map */
