@@ -1,0 +1,24 @@
+* {
+    @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+.container {
+    @include small {
+        width: 540px;
+    }
+    @include medium {
+        width: 720px;
+    }
+    @include large {
+        width: 960px;
+    }
+    @include x-large {
+        width: 1140px;
+    }
+    @include xx-large {
+        width: 1320px;
+    }
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
