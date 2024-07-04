@@ -1,0 +1,54 @@
+// Breakpoints
+@mixin small { 
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin medium { 
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin large { 
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+@mixin extra-large { 
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+// Overlay
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// Prefixer
+@mixin prefixer($prop, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $prop}: $value;
+    }
+    #{$prop}: $value;
+}
+
+// Animations
+@mixin fadeOut {
+    @include prefixer(animation, fade-out 2s infinite, webkit moz);
+    @keyframes fade-out {
+        0% {
+            opacity: .5;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: .5;
+        }
+    }
+}
