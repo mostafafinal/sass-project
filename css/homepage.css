@@ -91,8 +91,7 @@ ul, ol {
 }
 .bordered-head h2 {
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto;
   padding: 10px 15px;
   background-color: #e2494c;
   color: #fff;
@@ -170,6 +169,7 @@ ul, ol {
 
 .our-players {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .our-players .players {
   display: flex;
@@ -199,6 +199,21 @@ ul, ol {
 .our-players .players .player-box a {
   text-decoration: none;
   color: #e2494c;
+}
+
+.lorem {
+  padding-bottom: 7%;
+}
+.lorem .images-container {
+  display: flex;
+  gap: 30px;
+}
+.lorem .images-container .img-box {
+  width: 33.3333333333%;
+}
+.lorem .images-container .img-box img {
+  width: 410px;
+  height: 270px;
 }
 
 /*# sourceMappingURL=homepage.css.map */
