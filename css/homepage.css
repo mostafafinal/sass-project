@@ -202,7 +202,7 @@ ul, ol {
 }
 
 .lorem {
-  padding-bottom: 7%;
+  padding-bottom: 70px;
 }
 .lorem .images-container {
   display: flex;
@@ -214,6 +214,101 @@ ul, ol {
 .lorem .images-container .img-box img {
   width: 410px;
   height: 270px;
+}
+
+.footer {
+  background-color: #d1d1d1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.footer .container {
+  display: flex;
+  gap: 30px;
+}
+.footer .box-title {
+  font-size: 21px;
+}
+.footer .latest-box {
+  width: 50%;
+}
+.footer .latest-box .content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .latest-box .content-box:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.footer .latest-box .content-box h4 {
+  color: #e2494c;
+  font-size: 21px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer .latest-box .content-box p {
+  line-height: 2;
+  margin: 0;
+}
+.footer .latest-box .content-box .img-box {
+  padding: 3px;
+  margin-right: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .latest-box .content-box .img-box img {
+  max-width: 100%;
+}
+.footer .co-details-box,
+.footer .contact-us-box {
+  width: 25%;
+}
+.footer .co-details-box span {
+  display: block;
+  margin-bottom: 5px;
+}
+.footer .co-details-box .details,
+.footer .co-details-box .contact-details {
+  margin-bottom: 20px;
+}
+.footer .co-details-box .contact-details .email {
+  display: inline;
+  color: #e2494c;
+}
+.footer .co-details-box .office-hours .office {
+  font-size: 17px;
+  font-weight: bold;
+}
+.footer .contact-us-box input,
+.footer .contact-us-box textarea {
+  border: none;
+  border-radius: 5px;
+  display: block;
+}
+.footer .contact-us-box input:not(input[type=submit]),
+.footer .contact-us-box textarea:not(input[type=submit]) {
+  padding: 7px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.footer .contact-us-box input::placeholder,
+.footer .contact-us-box textarea::placeholder {
+  opacity: 0.5;
+}
+.footer .contact-us-box input:focus,
+.footer .contact-us-box textarea:focus {
+  outline: 1px solid #e2494c;
+}
+.footer .contact-us-box textarea {
+  height: 130px;
+}
+.footer .contact-us-box input[type=submit] {
+  background-color: #e2494c;
+  color: #fff;
+  padding: 5px 20px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=homepage.css.map */
