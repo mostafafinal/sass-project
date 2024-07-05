@@ -144,4 +144,28 @@ ul, ol {
   border: 2px solid #e2494c;
 }
 
+.services {
+  display: flex;
+  margin-top: 30px;
+}
+.services .service-box {
+  width: math(100%/3);
+}
+.services .service-box:not(:last-of-type) {
+  margin-right: 15px;
+}
+.services .service-box h3 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 21px;
+  font-weight: bold;
+}
+.services .service-box p {
+  line-height: 1.55;
+  color: rgba(0, 0, 0, 0.7);
+}
+.services .service-box a {
+  text-decoration: none;
+  color: #e2494c;
+}
+
 /*# sourceMappingURL=homepage.css.map */
