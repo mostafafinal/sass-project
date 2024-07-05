@@ -149,7 +149,7 @@ ul, ol {
   margin-top: 30px;
 }
 .services .service-box {
-  width: math(100%/3);
+  width: 33.3333333333%;
 }
 .services .service-box:not(:last-of-type) {
   margin-right: 15px;
@@ -164,6 +164,39 @@ ul, ol {
   color: rgba(0, 0, 0, 0.7);
 }
 .services .service-box a {
+  text-decoration: none;
+  color: #e2494c;
+}
+
+.our-players {
+  margin-top: 30px;
+}
+.our-players .players {
+  display: flex;
+  margin-top: 30px;
+}
+.our-players .players .player-box {
+  width: 20%;
+}
+.our-players .players .player-box img {
+  max-width: 100%;
+}
+.our-players .players .player-box:not(:last-of-type) {
+  margin-right: 15px;
+}
+.our-players .players .player-box h3 {
+  color: #9c9c9c;
+  font-size: 18px;
+}
+.our-players .players .player-box h3 span {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+.our-players .players .player-box p {
+  line-height: 1.55;
+  color: rgba(0, 0, 0, 0.7);
+}
+.our-players .players .player-box a {
   text-decoration: none;
   color: #e2494c;
 }
