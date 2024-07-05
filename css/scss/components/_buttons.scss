@@ -1,0 +1,12 @@
+.main-button {
+    display: block;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba($redColor, .8);
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: $redColor;
+    }
+}
