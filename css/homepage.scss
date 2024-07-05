@@ -2,7 +2,11 @@
 @import 'scss/helpers/mixins';
 
 @import 'scss/pages/global';
+
 @import 'scss/layouts/grid-system';
 @import 'scss/layouts/header';
+
+@import 'scss/components/_headings';
 @import 'scss/pages/home';
+
 @import 'scss/layouts/footer';

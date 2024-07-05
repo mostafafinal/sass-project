@@ -1,0 +1,22 @@
+.bordered-head {
+    position: relative;
+    h2 {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 15px;
+        background-color: $redColor;
+        color: #fff;
+        text-align: center;
+        border-radius: 15px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            border: 1.5px solid #d1d1d1;
+            z-index: -1;
+        }
+    }
+}
