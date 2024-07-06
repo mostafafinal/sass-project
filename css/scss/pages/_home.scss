@@ -52,6 +52,9 @@
         }
         &:not(:last-of-type) {
             margin-right: 15px;
+            @include small {
+                margin: 0;
+            }
         }
         h3 {
             color: rgba(black, .7);
@@ -101,8 +104,14 @@
             &:not(:last-of-type) {
                 @if direction == "rtl" {
                     padding-right: 15px;
+                    @include small {
+                        padding: 0;
+                    }
                 } @else {
                     padding-left: 15px;
+                    @include small {
+                        padding: 0;
+                    }
                 }
             }
             h3 {
