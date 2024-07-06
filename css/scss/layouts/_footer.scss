@@ -34,10 +34,7 @@
             }
             @include small {
                 flex-direction: column;
-                @if direction == "rtl" {
-                    align-items: end;
-                } @else {
-                    align-items: start;
+                align-items: start;
                 }
             }
             &:not(:last-of-type) {
@@ -56,11 +53,6 @@
             .img-box {
                 padding: 3px;
                 margin-right: 15px;
-                @if direction == "rtl" {
-                    margin-right: 15px;
-                } @else {
-                    margin-left: 15px;
-                }
                 background-color: white;
                 display: flex;
                 justify-content: center;
@@ -141,7 +133,6 @@
             height: 130px;
         }
     }
-}
 
 .copyright {
     padding-top: 25px;
@@ -168,11 +159,7 @@
         span {
             color: $redColor;
             font-weight: bold;
-            @if direction == "rtl" {
-                margin-left: 5px;
-            } @else {
-                margin-right: 5px;
-            }
+            margin-right: 5px;
         }
     }
 }

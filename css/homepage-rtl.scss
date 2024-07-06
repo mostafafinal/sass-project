@@ -1,0 +1,22 @@
+.service-box {
+        margin-right: 0 !important;
+        &:not(:last-of-type) {
+            margin-left: 15px;
+        }
+    }
+
+.player-box {
+        padding-right: 0 !important;
+        &:not(:first-of-type) {
+            padding-left: 15px;
+        }
+}
+
+.img-box {
+    margin-right: 0 !important;
+    margin-left: 15px;
+}
+
+.lang {
+    flex-direction: row-reverse;
+}

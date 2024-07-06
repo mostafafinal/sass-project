@@ -50,7 +50,7 @@
             width: 100%;
             text-align: center;
         }
-        &:not(:last-of-type) {
+        &:not(:first-of-type) {
             margin-right: 15px;
             @include small {
                 margin: 0;
@@ -102,16 +102,9 @@
                 max-width: 100%;
             }
             &:not(:last-of-type) {
-                @if direction == "rtl" {
-                    padding-right: 15px;
-                    @include small {
-                        padding: 0;
-                    }
-                } @else {
-                    padding-left: 15px;
-                    @include small {
-                        padding: 0;
-                    }
+                padding-right: 15px;
+                @include small {
+                    padding: 0;
                 }
             }
             h3 {
@@ -120,11 +113,7 @@
                 color: $greyColor;
                 font-size: 18px;
                 span {
-                    @if direction == "rtl" {
-                        margin-right: 5px;
-                    } @else {
-                        margin-left: 5px;
-                    }
+                    margin-right: 5px;
                     color: rgba(black, .7);
                     font-weight: bold;
                 }
