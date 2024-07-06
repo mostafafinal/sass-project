@@ -155,11 +155,14 @@
             img {
                 width: 410px;
                 height: 270px;
+                @include small {
+                    width: 100%
+                }
                 @include medium {
                     width: calc(100% - 20px);
                 }
-                @include small {
-                    width: 100%
+                @include large {
+                    width: 100%;
                 }
             }
         }

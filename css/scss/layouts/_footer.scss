@@ -1,8 +1,9 @@
 .footer {
     background-color: #d1d1d1;
     padding-top: 30px;
-    padding-bottom: 30px;
     .container {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #c1c1c1;
         display: flex;
         gap: 30px;
         @include medium {
@@ -128,6 +129,32 @@
         }
         textarea {
             height: 130px;
+        }
+    }
+}
+
+.copyright {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #d1d1d1;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(black, .5);
+        font-size: 18px;
+        @include small {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px
+        }
+        @include medium{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px
+        }
+        span {
+            color: $redColor;
+            font-weight: bold;
         }
     }
 }
