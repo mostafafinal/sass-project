@@ -23,10 +23,10 @@
         li {
             width: 20px;
             height: 20px;
-            background-color: #d1d1d1;
+            background-color: $greyColor;
             border-radius: 50%;
             transition: .3s;
-            border: 2px solid #d1d1d1;
+            border: 2px solid $greyColor;
             &.active,
             &:hover {
                 background-color: #fff;
@@ -99,12 +99,23 @@
                 max-width: 100%;
             }
             &:not(:last-of-type) {
-                padding-right: 15px;
+                @if direction == "rtl" {
+                    padding-right: 15px;
+                } @else {
+                    padding-left: 15px;
+                }
             }
             h3 {
+                display: flex;
+                justify-content: center;
                 color: $greyColor;
                 font-size: 18px;
                 span {
+                    @if direction == "rtl" {
+                        margin-right: 5px;
+                    } @else {
+                        margin-left: 5px;
+                    }
                     color: rgba(black, .7);
                     font-weight: bold;
                 }

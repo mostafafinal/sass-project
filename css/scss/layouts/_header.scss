@@ -7,7 +7,6 @@
     .container {
         display: flex;
         align-items: center;
-        flex-direction: $flex-direction;
         position: relative;
         .logo {
             width: 30%;
@@ -16,6 +15,7 @@
             }
             p {
                 margin-bottom: 0;
+                color: grey;
             }
             @include small {
                 flex: 1;
@@ -23,7 +23,6 @@
         }
         .nav-links { 
             display: flex;
-            flex-direction: $flex-direction;
             justify-content: center;
             align-items: center;
             width: 70%;
@@ -54,7 +53,7 @@
                 width: 20%;
                 transition: .3s;
                 &:hover {
-                    color: #ddd;
+                    color: $greyColor;
                 }
                 @include small {
                     display: block;

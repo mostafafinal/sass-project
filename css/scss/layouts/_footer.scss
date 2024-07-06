@@ -1,5 +1,5 @@
 .footer {
-    background-color: #d1d1d1;
+    background-color: $greyColor;
     padding-top: 30px;
     .container {
         padding-bottom: 30px;
@@ -51,7 +51,11 @@
             }
             .img-box {
                 padding: 3px;
-                margin-right: 15px;
+                @if direction == "rtl" {
+                    margin-right: 15px;
+                } @else {
+                    margin-left: 15px;
+                }
                 background-color: white;
                 display: flex;
                 justify-content: center;
@@ -136,7 +140,7 @@
 .copyright {
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: #d1d1d1;
+    background-color: $greyColor;
     .container {
         display: flex;
         justify-content: space-between;
@@ -152,9 +156,17 @@
             align-items: center;
             row-gap: 10px
         }
+        div:first-child {
+            display: flex;
+        }
         span {
             color: $redColor;
             font-weight: bold;
+            @if direction == "rtl" {
+                margin-left: 5px;
+            } @else {
+                margin-right: 5px;
+            }
         }
     }
 }
