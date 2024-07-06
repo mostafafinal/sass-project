@@ -10,3 +10,21 @@
         background-color: $redColor;
     }
 }
+
+.toggle-menu {
+    position: relative;
+    padding: 5px 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+    &.active {
+        border: 2px solid $redColor;
+    }
+    i {
+        font-size: 35px;
+    }
+    @include small {
+        display: block;
+    }
+}
