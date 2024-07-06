@@ -5,17 +5,36 @@
     .container {
         display: flex;
         gap: 30px;
+        @include medium {
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include small {
+            gap: 0;
+            flex-direction: column;
+            align-items: start;
+        }
     }
     .box-title {
-        font-size: 21px;
+        font-size: 20px;
     }
     color: rgba(black, .7);
     .latest-box {
         width: 50%;
+        @include small {
+            width: 100%;
+        }
         .content-box {
             display: flex;
             align-items: center;
             justify-content: center;
+            @include medium {
+                flex-direction: column;
+            }
+            @include small {
+                flex-direction: column;
+            }
             &:not(:last-of-type) {
                 margin-bottom: 20px;
             }
@@ -36,6 +55,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @include medium {
+                    margin-right: 0;
+                }
+                @include small {
+                    margin-right: 0;
+                }
                 img {
                     max-width: 100%;
                 }
@@ -45,6 +70,12 @@
     .co-details-box,
     .contact-us-box {
         width: calc(50% / 2);
+        @include medium {
+            width: 50%;
+        }
+        @include small {
+            width: 100%;
+        }
     }
     .co-details-box {
         span {
@@ -76,6 +107,12 @@
             border: none;
             border-radius: 5px;
             display: block;
+            @include medium {
+                margin: auto;
+            }
+            @include small {
+                margin: auto;
+            }
             &:not(input[type="submit"]) {
                 padding: 7px;
                 margin-bottom: 10px;

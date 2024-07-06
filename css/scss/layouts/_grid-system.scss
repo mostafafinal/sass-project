@@ -4,10 +4,11 @@
 
 .container {
     @include small {
-        width: 540px;
+        width: 100%;
     }
     @include medium {
         width: 720px;
+        text-align: center;
     }
     @include large {
         width: 960px;
