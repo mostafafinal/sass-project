@@ -467,6 +467,7 @@ ul, ol {
 }
 .footer .latest-box .content-box .img-box {
   padding: 3px;
+  margin-right: 15px;
   margin-left: 15px;
   background-color: white;
   display: flex;
